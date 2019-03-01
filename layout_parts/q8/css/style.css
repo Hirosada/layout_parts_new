@@ -1,5 +1,270 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+/*Q8-1*/
+.small{
+  margin: 0 auto;
+}
+.btn{
+  text-align: center;
+  display:inline-block;
+  vertical-align: middle;
+  margin-left:10px;
+}
 
-/* 回答はここに書いてね */
+.top{
+  line-height: 26px;
+  font-size: 16px;
+  padding:0 15px;
+  border-radius: 3px;
+   
+}
+/*3つのボタンの色が一緒のものを共通のクラスをつけて、一回でスタイルをつけるようにした*/
+.common{
+  color: #fff;
+  background-color: #00bcd4;
+}
+.error{
+  color: #fff;
+background-color: #ff4081;
+}
+.disabled{
+  color: #fff;
+  background-color: #e5e5e5; 
+}
+.shadow{
+  color: #222;
+  box-shadow:0 1px 6px rgba(0,0,0,.12),0 1px 4px rgba(0,0,0,.12);  
+}
+.short{
+  font-size: 20px;
+  border-radius: 5px;
+  line-height: 32px;
+  padding:0 20px;
+}
+.both{
+  font-size: 24px;
+  line-height: 38px;
+  border-radius: 7px;
+  padding:0 25p
+}
+.clearfix:after{
+display:block;
+content: "";
+clear:both;
+}
+
+
+/*Q8-2*/
+.all-form{
+  background-color:#ECF1F2;
+  width: 700px;
+  padding:20px;
+  margin: 0 auto;
+}
+.middle-box{
+  float: left;
+  width: 300px;
+}
+
+.title-dai{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.title-dai::before{
+  background-color: #ccc;
+  position: absolute;
+  top:50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content:"";
+}
+
+.moji{
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ECF1F2;
+  display:inline-block;
+  padding-right:10px;
+  position: relative;
+}
+
+.box-text{
+  float:right;
+}
+.field-name{
+  float: left;
+  line-height: 25px;
+}
+.field{
+  float:right;
+  box-sizing: border-box;
+  width: 180px;
+}
+
+.leter li{
+  margin-top:20px;
+}
+
+.leter li:first-child{
+margin-top:0px;
+}
+
+.leter p{
+  width: 100px;
+  text-align: right;
+}
+
+.hometown{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.in-box{
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+}
+
+.leter input{
+  padding:5px;
+}
+
+.mac{
+  float:  right;
+  position: relative;
+  padding-left:24px;
+}
+
+.old{
+  display: none;;
+}
+
+.old-text::before{
+  content: "";
+  position: absolute;
+  left:0;
+  width: 16px;
+  height: 16px;
+  background-color:#fff;
+  border: 1px solid #ccc;
+} 
+
+.old:checked + .old-text::after{
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    margin-top: -14px;
+    width: 8px;
+    height: 16px;
+    border-right: 3px solid #00BCD4;
+    border-bottom: 3px solid #00BCD4;
+    transform: rotate(45deg);
+    content: '';
+}
+/*position:absoluto;で場所を指定して:afterでチェックボックスの上に持ってきた。*/
+
+.hometown{
+  padding:5px;
+}
+
+.box-text{
+  float: right;
+  width: 380px;
+}
+
+.what{
+  width: 100%;
+  height: 203px;
+  padding:10px;
+  border: none;
+  border-radius: 3px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.sent{
+  margin-top:20px;
+  text-align: right;
+}
+
+.sub{
+  font-size:16px;
+  line-height: 26px;
+  border-radius: 5px;
+  background-color: #00BCD4;
+  color:#FFF;
+  padding:0px 10px;
+}
+
+.sub:active{
+  color: #00BCD4;
+  background-color:#fff;
+}
+
+/*activeでクリックされたときに背景色と文字色が反転するようにしました。*/
+
+.hometown{
+  border:none;
+  background-color: #FFF;
+  position: relative;
+
+}
+.tea{
+  position: relative;
+}
+
+.tea:after{
+  display: block;
+  position: absolute;
+  top:4px;
+  right:10px;
+  width: 8px;
+  height: 8px;
+  border-right:2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  transform: rotate(45deg);
+  content:"";
+}
+
+.men{
+display: none;
+}
+.gender{
+  position: relative;
+  padding:3px 3px 3px 20px;
+}
+.gender::before{
+  position: absolute;
+  top:14px;
+  left:0;
+  margin-top:-10px;
+  width: 14px;
+  height: 14px;
+  background-color: #FFF;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  content: "";
+}
+
+.men:checked + .gender::after{
+  position: absolute;
+  top:12px;
+  left:4px;
+  width: 8px;
+  height: 8px;
+  margin-top:-4px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content:"";
+}
+
+.type{
+  display:inline-block;
+}
+
+

@@ -1,5 +1,37 @@
 @charset "UTF-8";
 
+/* 回答はここに書いてね *
 /* 回答はここに書いてね */
+.food{
+	width: 100%;
+	border: solid 1px #dedede;
+	table-layout: fixed;
 
-/* 回答はここに書いてね */
+	
+}
+/*borderの色を白から#dededeに変換*/
+.food th{
+	border: solid 1px #dedede;
+	background-color:#2244aa;
+	color:white;
+	font-size: 18px;
+	line-height: 26px;
+	padding:10px;
+}
+
+/*food th tdにかけていたpaddingをそれぞれのCSSに入れた。*/
+.food td{
+	border: solid 1px #dedede;
+	text-align: center;
+	font-size:16px;
+	line-height: 22px;
+	padding:10px;
+}
+
+.food tr:last-child{
+border-top: dashed #000 2px;
+}
+
+.food tr:nth-child(odd){
+	background-color: #ecf1f2;
+}

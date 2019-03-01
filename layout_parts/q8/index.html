@@ -32,26 +32,33 @@
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="small clearfix">
+              <div class="btn top common">common</div>
+              <div class="btn top error">error</div>
+              <div class="btn top disabled">disabled</div>
+              <div class="btn top shadow">shadow</div>
+            </div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="center">
+              <div class="btn short common">common</div>
+              <div class="btn short error">error</div>
+              <div class="btn short disabled">disabled</div>
+              <div class="btn short shadow">shadow</div>
+            </div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+              <div class="btn both common">common</div>
+              <div class="btn both error">error</div>
+              <div class="btn both disabled">disabled</div>
+              <div class="btn both shadow">shadow</div>
+            </div>
+            <!--hakoというクラス名をbtnにし、もともとあった<div class="large">をけした-->
+
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -99,8 +106,77 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
           <div class="q8">
-            
+            <form class="all-form">
+                <div class="title-dai">
+                  <p class="moji">From Execise</p>
+                </div>
+              <div class="clearfix">
+                <div class="middle-box clearfix">
+                  <ul class="leter">
+                    <li class="name clearfix">
+                      <p class="field-name">名前</p>
+                      <div class="inbox field">
+                        <input class="in-box" type="text">
+                      </div>
+                    </li>
+                    <li class="sex clearfix">
+                      <p class="field-name">性別</p>
+                        <div class="field">
+                          <div class="type">
+                            <input id="form01" class="men" name="cost" type="radio">
+                            <label for="form01" class="gender">男性</label>
+                          </div>
+                          <div class="type">
+                            <input id="form02" class="men" name="cost" type="radio">
+                            <label for="form02" class="gender">女性</label>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="from clearfix">
+                      <p class="field-name">出身</p>
+                      <div class="field tea">
+                        <select class="hometown" name="hometown">
+                          <option value="tokyo">東京</option>
+                          <option value="saitama">埼玉</option>
+                          <option value="chiba">千葉</option>
+                          <option value="kanagawa">神奈川</option>
+                        </select>
+                      </div>
+                    </li>
+
+                    <li class="mail clearfix">
+                      <p class="field-name">Eメール</p>
+                      <div class="field">
+                        <input class="in-box" type="text" placeholder="ex)hoge@gmail.com">
+                      </div>
+                    </li>
+
+                    <li class="tell clearfix">
+                      <p class="field-name">電話番号</p>
+                      <div class="field">
+                        <input class="in-box" type="text" placeholder="ex) 08012345678">
+                      </div>
+                    </li>
+
+                  <li class="20old clearfix">
+                      <div class="mac">
+                        <input id ="form03" class="old btn" name="twenty" type="checkbox">
+                        <label for="form03" class="old-text">20歳以上です</label>
+                      </div>
+                  </li>
+                </ul>
+                <div class="sent">
+                    <button class="sub">送信</button>
+                  </div>
+              </div>
+                  <div class="box-text">
+                      <textarea class="what" type="textarea" placeholder="何かあれば入力してください。"></textarea>
+                  </div>
+              </div>
+            </form>
           </div>
+
+          
           <!-- 回答はここに書いてね -->
         </div>
       </div>

@@ -2,4 +2,114 @@
 
 /* 回答はここに書いてね */
 
-/* 回答はここに書いてね */
+/*Q7-1*/
+
+.all{
+  font-size: 16px;
+  width: 500px;
+
+}
+.is-box{
+  width: 225px;
+  box-sizing: border-box;
+}
+/*is-boxというクラス名を追加してそこに共通のスタイルをいれた。*/
+.right{
+  float: right;
+  margin-left:50px;
+  
+}
+.left{
+  float: left;
+  
+}
+
+.clearfix::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/*Q7-2*/
+ .goal{
+  display: table;
+} 
+
+.in-box{
+  width: 225px;
+  display: table-cell;
+  vertical-align: middle;
+}
+/*左と右のボックスのクラスを共通にしてテーブルセルをつける*/
+.r-right{
+  padding-left:50px;
+}
+
+.clearfix::after{
+  content:"";
+  display:block;
+  clear: both;
+}
+
+/*Q7-3*/
+.on{
+  display:table;
+}
+
+.on-is{
+  width: 225px;
+  display: inline-block;
+  
+}
+/*左右のクラスを共通にして、inline-blockだけで横並びにした*/
+/*vertical-align:  justify-items: をけしてinline-blockだけで横並びにした*/
+.hidari{
+  margin-right:50px;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.over{
+  display: flex;
+  justify-content:space-around;
+  align-items:flex-end;
+  margin: 10px;
+
+}
+
+.righter{
+  width: 225px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.lefter{
+  width: 225px;
+  justify-content: center;
+  box-sizing: border-box;
+
+}
+
+.big-box{
+  display: table;
+}
+
+.left-hako{
+  width: 300px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.right-hako{
+  display: inline-block;
+  width: 100%;
+  margin-left:-300px;
+  padding-left: 350px;
+  vertical-align: top;
+  
+  box-sizing: border-box;
+  
+}
