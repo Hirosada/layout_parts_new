@@ -51,20 +51,23 @@
 }
 
 /*Q7-3*/
-.on{
-  display:table;
+.on {
+  font-size: 0;
+}
+.on-is{
+  width: 205px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left:50px;
+  padding:10px;
+  font-size: 16px;
 }
 
-.on-is{
-  width: 225px;
-  display: inline-block;
-  
+.on-is:first-child{
+  margin-left:0;
 }
 /*左右のクラスを共通にして、inline-blockだけで横並びにした*/
 /*vertical-align:  justify-items: をけしてinline-blockだけで横並びにした*/
-.hidari{
-  margin-right:50px;
-}
 .clearfix::after{
   content: "";
   display: block;
